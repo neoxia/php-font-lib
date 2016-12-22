@@ -42,7 +42,7 @@ class AdobeFontMetrics {
       $map_data = $map->parse();
     }
 
-    $this->f = fopen($file, "w+");
+    $this->f = fopen($file, "w");
 
     $font = $this->font;
 

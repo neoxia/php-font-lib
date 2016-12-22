@@ -104,10 +104,10 @@ class BinaryStream {
     $f = null;
 
     if ($allow_memory) {
-      $f = fopen("php://temp", "rb+");
+      $f = fopen("php://temp", "rb");
     }
     else {
-      $f = fopen(tempnam(sys_get_temp_dir(), "fnt"), "rb+");
+      $f = fopen(tempnam(sys_get_temp_dir(), "fnt"), "rb");
     }
 
     return $f;
